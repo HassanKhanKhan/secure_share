@@ -6,8 +6,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 SECRET_KEY = 'django-insecure-z915nn7$*6mdlufuvphk@&6a1lom@*^zni=yez^8!al8dlj799'
 DEBUG = False
-ALLOWED_HOSTS = ['secure_share.onrender.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = [
+    "secure-share-1.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://secure-share-1.onrender.com",
+]
 
 # Application definition
 INSTALLED_APPS = [
